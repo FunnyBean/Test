@@ -22,6 +22,7 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
@@ -31,57 +32,40 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(124, 68)
+        resources.ApplyResources(Me.Button1, "Button1")
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 23)
-        Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Ahoj svet"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 15)
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(47, 17)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Meno:"
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(94, 12)
+        resources.ApplyResources(Me.txtName, "txtName")
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(130, 22)
-        Me.txtName.TabIndex = 1
         '
         'txtLastName
         '
-        Me.txtLastName.Location = New System.Drawing.Point(94, 40)
+        resources.ApplyResources(Me.txtLastName, "txtLastName")
         Me.txtLastName.Name = "txtLastName"
-        Me.txtLastName.Size = New System.Drawing.Size(130, 22)
-        Me.txtLastName.TabIndex = 3
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 43)
+        resources.ApplyResources(Me.Label2, "Label2")
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(76, 17)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Priezvisko:"
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(382, 173)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtLastName)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
