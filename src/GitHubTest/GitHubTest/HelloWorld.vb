@@ -5,7 +5,7 @@
     End Sub
 
     Public Sub SayHelloToWorld(name As String)
-        MessageBox.Show("Hello World", String.Format("{0} says", If(String.IsNullOrEmpty(name), "Who", name)))
+        MessageBox.Show(name, "Hello World")
     End Sub
 
 End Class

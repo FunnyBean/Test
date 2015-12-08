@@ -25,14 +25,16 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtLastName = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(171, 12)
+        Me.Button1.Location = New System.Drawing.Point(94, 68)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(105, 23)
-        Me.Button1.TabIndex = 2
+        Me.Button1.Size = New System.Drawing.Size(100, 23)
+        Me.Button1.TabIndex = 4
         Me.Button1.Text = "Hello World"
         Me.Button1.UseVisualStyleBackColor = True
         '
@@ -47,16 +49,34 @@ Partial Class Form1
         '
         'txtName
         '
-        Me.txtName.Location = New System.Drawing.Point(65, 12)
+        Me.txtName.Location = New System.Drawing.Point(94, 12)
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(100, 22)
         Me.txtName.TabIndex = 1
+        '
+        'txtLastName
+        '
+        Me.txtLastName.Location = New System.Drawing.Point(94, 40)
+        Me.txtLastName.Name = "txtLastName"
+        Me.txtLastName.Size = New System.Drawing.Size(100, 22)
+        Me.txtLastName.TabIndex = 3
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(12, 43)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(76, 17)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Priezvisko:"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(640, 320)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtLastName)
         Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
@@ -70,4 +90,6 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents txtName As TextBox
+    Friend WithEvents txtLastName As TextBox
+    Friend WithEvents Label2 As Label
 End Class
