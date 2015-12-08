@@ -35,7 +35,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 23)
         Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Hello World"
+        Me.Button1.Text = "Ahoj svet"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Label1
