@@ -31,7 +31,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(94, 68)
+        Me.Button1.Location = New System.Drawing.Point(124, 68)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(100, 23)
         Me.Button1.TabIndex = 4
@@ -51,14 +51,14 @@ Partial Class Form1
         '
         Me.txtName.Location = New System.Drawing.Point(94, 12)
         Me.txtName.Name = "txtName"
-        Me.txtName.Size = New System.Drawing.Size(100, 22)
+        Me.txtName.Size = New System.Drawing.Size(130, 22)
         Me.txtName.TabIndex = 1
         '
         'txtLastName
         '
         Me.txtLastName.Location = New System.Drawing.Point(94, 40)
         Me.txtLastName.Name = "txtLastName"
-        Me.txtLastName.Size = New System.Drawing.Size(100, 22)
+        Me.txtLastName.Size = New System.Drawing.Size(130, 22)
         Me.txtLastName.TabIndex = 3
         '
         'Label2
@@ -74,7 +74,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(640, 320)
+        Me.ClientSize = New System.Drawing.Size(382, 173)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtLastName)
         Me.Controls.Add(Me.txtName)
