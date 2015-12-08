@@ -1,6 +1,6 @@
 ﻿Public Class Form1
 
-    Protected Sub SayHello()
+    Public Sub SayHello()
         Me.SayHello(String.Format("{0} {1}", Me.txtName.Text, Me.txtLastName.Text))
     End Sub
 
